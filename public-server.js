@@ -150,7 +150,7 @@ server.listen(PORT, HOST, () => {
 	console.log(`🌐 Public License Server listening on http://${HOST}:${PORT}`);
 	console.log(`🔑 Admin token: ${state.adminToken}`);
 	console.log(`📊 Server Status: ONLINE`);
-	console.log(`🌍 Accessible from: http://YOUR_PUBLIC_IP:${PORT}`);
+	console.log(`🌍 Accessible from: http://41.68.42.173:${PORT}`);
 });
 
 // Handle server errors
@@ -169,3 +169,4 @@ process.on('SIGINT', () => {
 		process.exit(0);
 	});
 });
+
