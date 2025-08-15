@@ -1,0 +1,17 @@
+{
+  "name": "license-server-railway",
+  "version": "1.0.0",
+  "description": "License Server for PIXEL MINDS",
+  "main": "public-server.js",
+  "scripts": {
+    "start": "node public-server.js",
+    "dev": "node public-server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "keywords": ["license", "server", "pixel-minds"],
+  "author": "THE DEVIL",
+  "license": "ISC"
+}
