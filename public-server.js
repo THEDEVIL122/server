@@ -6,11 +6,11 @@ const path = require('path');
 
 // Configuration
 const HOST = process.env.HOST || '0.0.0.0';
-const PORT = Number(process.env.PORT || 3001);
+const PORT = Number(process.env.PORT || 8080);
 const DATA_FILE = path.join(__dirname, 'server.json');
 
 // Seed admin token from env or fall back to provided token
-const DEFAULT_ADMIN_TOKEN = process.env.ADMIN_TOKEN || '4f932362-6dc5-4105-b007-66c8c5cba27b';
+const DEFAULT_ADMIN_TOKEN = process.env.ADMIN_TOKEN || 'admin_7f9e2a1b_8c4d_9e5f_0a1b_2c3d4e5f6a7b';
 
 /**
  * Load or initialize the data file that stores admin token and allow/block lists
@@ -150,7 +150,7 @@ server.listen(PORT, HOST, () => {
 	console.log(`🌐 Public License Server listening on http://${HOST}:${PORT}`);
 	console.log(`🔑 Admin token: ${state.adminToken}`);
 	console.log(`📊 Server Status: ONLINE`);
-	console.log(`🌍 Accessible from: http://41.68.42.173:${PORT}`);
+	console.log(`🌍 Accessible from: http://YOUR_PUBLIC_IP:${PORT}`);
 });
 
 // Handle server errors
@@ -169,4 +169,3 @@ process.on('SIGINT', () => {
 		process.exit(0);
 	});
 });
-
